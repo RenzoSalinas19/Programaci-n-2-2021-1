@@ -1,0 +1,31 @@
+GET http://localhost:8080/products HTTP/1.1
+Accept: application/json
+
+GET http://localhost:8080/product/1 HTTP/1.1
+Accept: application/json
+
+DELETE  http://localhost:8080/product/3 HTTP/1.1
+Accept: application/json
+
+POST http://localhost:8080/product HTTP/1.1
+Content-Type: application/json
+
+{
+    "ruc": 28544546,
+    "razon": "Universidad San Martin",
+    "descripcion": "pago realizado",
+    "tipo": "Sol",
+    "monto": 1250.55
+}
+
+PUT  http://localhost:8080/product HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 2,
+    "ruc": 28544548,
+    "razon": "Universidad Vallejo",
+    "descripcion": "pago ejecutado",
+    "tipo": "Dolar",
+    "monto": 1250.58
+}
